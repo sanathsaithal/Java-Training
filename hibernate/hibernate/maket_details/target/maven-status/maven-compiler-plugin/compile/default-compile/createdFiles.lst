@@ -1,0 +1,5 @@
+com\wolken\maket_details\dao\MarketDetailsDAOImpl.class
+com\wolken\maket_details\entity\MarketDetails.class
+com\wolken\maket_details\Tester.class
+com\wolken\maket_details\util\HibernateUtils.class
+com\wolken\maket_details\dao\MarketDetailsDAO.class
