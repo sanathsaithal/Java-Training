@@ -2,10 +2,11 @@ package com.wolken.hackerrank.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.NamedQueries;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,19 +17,20 @@ import lombok.ToString;
 @Getter
 @Setter
 @Entity
-@Table
+@Table(name="hackerrankuserentity")
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class HackerrankUserEntity {
+@NamedQueries({
+	@NamedQuery(name="getByEmail", query="from HackerLoginEntity where email= :email"),
+	@NamedQuery(name="updatePassword",query="update HackerLoginEntity set password=:newPassword where email=: email")
+})
+
+public class HackerLoginEntity {
 	
 	@Id
-	private int id;
-	private String name;
 	private String email;
 	private String password;
-	private long contact;
+
 }
-
-
