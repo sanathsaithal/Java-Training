@@ -5,6 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <style>
 table, th, td {
   border: 1px solid black;
@@ -14,30 +19,12 @@ table, th, td {
 <title>saved data</title>
 </head>
 <body>
+<nav class="navbar navbar-light bg-light">
+<a class="navbar-brand" href="home"><button type="submit" class="btn btn-outline-info">HOME</button></a>
+</nav>
+<div class="container">
 <h2>${msg}</h2>
-<a href="home">HOME</a>
-<table>
-<tr>
-	<th>BrandName</th>
-	<th>ModelNo</th>
-	<th>ModelName</th>
-	<th>Type</th>
-	<th>RAM</th>
-	<th>ROM</th>
-	<th>Price</th>
-	<th>Availability</th>
-	</tr>
-	<c:forEach var="item" items="${list}">
-	<tr>
-	<td>${item.brandName}</td>
-	<td>${item.modelNo}</td>
-	<td>${item.modelName}</td>
-	<td>${item.type}</td>
-	<td>${item.ram}</td>
-	<td>${item.rom}</td>
-	<td>${item.price}</td>
-	<td>${item.availability}</td>
-	</tr>
-	</c:forEach>
-	</table>
+
+</div>
+</body>
 </html>

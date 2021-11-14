@@ -6,7 +6,7 @@ import com.wolken.mobile.entity.MobileEntity;
 
 public interface MobileDao {
 
-	void save(MobileEntity entity);
+	String save(MobileEntity entity);
 
 	List getByBrand(String bName);
 

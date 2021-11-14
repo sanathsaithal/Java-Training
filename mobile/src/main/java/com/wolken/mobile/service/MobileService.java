@@ -7,7 +7,7 @@ import com.wolken.mobile.entity.MobileEntity;
 
 public interface MobileService {
 
-	void save(MobileDto dto);
+	String save(MobileDto dto);
 
 	List getByPrice(int price);
 
